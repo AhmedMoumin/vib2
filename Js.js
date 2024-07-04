@@ -1,6 +1,8 @@
 function vibrate() {
     if (window.navigator) {
-        window.navigator.vibrate(1000)
+        setInterval(() => {
+            window.navigator.vibrate([500,100,2000])
+        }, 2600);
     }
 }
 
